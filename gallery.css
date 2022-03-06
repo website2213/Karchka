@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.heading {
+	font-size: 3rem;
+	margin: 2rem 0;
+	text-transform: capitalize;
+	color: purple;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	letter-spacing: 2rem;
+	text-align: center;
+	text-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+}
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	overflow: hidden;
+}
+
+.hero .carousel {
+	width: 150px;
+	margin: 100px auto 0;
+	overflow: visible;
+
+}
+
+.carousel img {
+	-webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
+}
+
+p {
+	color: white;
+	background: #f9004d;
+	border: 2px solid transparent;
+	border-radius: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 13px 30px;
+}
+
+button {
+	background: #f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s;
+}
+
+button:hover {
+	background: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+button a {
+	color: white;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Վիդեոներ</title>
+	<link rel="stylesheet" type="text/css" href="css/video.css">
+</head>
+<body>
+
+<div class="container">
+	
+	<div class="heading">Վիդեոներ</div>
+
+	<div class="video-container">
+		
+		<div class="video">
+			<video src="video/video1.mp4"></video>
+		</div>
+
+				<div class="video">
+			<video src="video/video2.mp4"></video>
+		</div>
+
+				<div class="video">
+			<video src="video/video3.mp4"></video>
+		</div>
+
+				<div class="video">
+			<video src="video/video4.mp4"></video>
+		</div>
+
+				<div class="video">
+			<video src="video/video5.mp4"></video>
+		</div>
+
+				<div class="video">
+			<video src="video/video6.mp4"></video>
+		</div>
+	</div>	
+	<button type="button"><a href="index.html">Վեռադառնալ գլխավոր էջ</a></button>
+</div>
+
+
+<script>
+	var video = document.querySelectorAll('video')
+
+	video.forEach(play => play.addEventListener('click', () =>{
+
+		play.classList.toggle('active');
+
+		if(play.paused){
+			play.play();
+		}else{
+			play.pause();
+			play.currentTime = 0;
+		}
+
+	}));
+</script>
+</body>
+</html>
